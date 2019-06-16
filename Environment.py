@@ -11,8 +11,8 @@ class Environment:
 		self.ended = False
 		self.num_states = 3**(LENGTH*LENGTH)
 
-	def is_empty():
-		return self.board[i, j] = 0
+	def is_empty(self, i, j):
+		return self.board[i, j] == 0
 
 	def reward(self, sym):
 		# no reward until game is over

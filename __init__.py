@@ -1,4 +1,3 @@
-
 # play all possible games
 # need to also store if game is over or not
 # because we are going to initialize those values to 0.5
@@ -35,7 +34,7 @@
 #           results += get_state_hash_and_winner(env, next_sym)
 #           env.board[i,j] = 0 # reset it
 #   return results
-
+from Agent import Agent
 
 def initialV_x(env, state_winner_triples):
   # initialize state values as follows
