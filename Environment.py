@@ -1,5 +1,3 @@
-
-
 LENGTH = 3 
 
 class Environment:
@@ -33,15 +31,15 @@ class Environment:
 		h = 0
 		for i in xrange(LENGTH):
 			for j in xrange(LENGTH):
-    			if self.board[i,j] == 0:
-    				v = 0
-    			elif self.board[i,j] == self.x:
-    				v = 1
-    			elif self.board[i,j] == self.o:
-    				v = 2
-    			h += (3**k) * v
-    			k += 1
-    	return h
+  			 if self.board[i,j] == 0:
+  				v = 0
+  			 elif self.board[i,j] == self.x:
+  				v = 1
+  			 elif self.board[i,j] == self.o:
+  				v = 2
+  			h += (3**k) * v
+  			k += 1
+    return h
 
     def game_over(self, force_calculate=False):
     	# returns true if game over (a player has won or it's a draw)

@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import Environment
+from Environment import Environment
 
 LENGTH = 3
 
